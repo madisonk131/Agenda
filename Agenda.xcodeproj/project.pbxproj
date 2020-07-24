@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7DB6B8790D05B239DB550031 /* Pods_Agenda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9EECC01D4E0B5B815DE3A55 /* Pods_Agenda.framework */; };
 		A60EC21F24CB54F1006748E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60EC21E24CB54F1006748E8 /* AppDelegate.swift */; };
 		A60EC22124CB54F1006748E8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60EC22024CB54F1006748E8 /* SceneDelegate.swift */; };
 		A60EC22324CB54F1006748E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60EC22224CB54F1006748E8 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4808C089FFD7A341B9B6C05A /* Pods-Agenda.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Agenda.debug.xcconfig"; path = "Target Support Files/Pods-Agenda/Pods-Agenda.debug.xcconfig"; sourceTree = "<group>"; };
 		A60EC21B24CB54F1006748E8 /* Agenda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Agenda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A60EC21E24CB54F1006748E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A60EC22024CB54F1006748E8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		A60EC22724CB54F2006748E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A60EC22A24CB54F2006748E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A60EC22C24CB54F2006748E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9EECC01D4E0B5B815DE3A55 /* Pods_Agenda.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Agenda.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB0C8A00C34624DBA429DA7F /* Pods-Agenda.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Agenda.release.xcconfig"; path = "Target Support Files/Pods-Agenda/Pods-Agenda.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DB6B8790D05B239DB550031 /* Pods_Agenda.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11693A5BAEDA669513DE2893 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9EECC01D4E0B5B815DE3A55 /* Pods_Agenda.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A60EC21224CB54F1006748E8 = {
 			isa = PBXGroup;
 			children = (
 				A60EC21D24CB54F1006748E8 /* Agenda */,
 				A60EC21C24CB54F1006748E8 /* Products */,
+				AD1802CD47C46D692EC19C54 /* Pods */,
+				11693A5BAEDA669513DE2893 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,16 @@
 			path = Agenda;
 			sourceTree = "<group>";
 		};
+		AD1802CD47C46D692EC19C54 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4808C089FFD7A341B9B6C05A /* Pods-Agenda.debug.xcconfig */,
+				BB0C8A00C34624DBA429DA7F /* Pods-Agenda.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A60EC22F24CB54F2006748E8 /* Build configuration list for PBXNativeTarget "Agenda" */;
 			buildPhases = (
+				B2530911F16203E9B2B55068 /* [CP] Check Pods Manifest.lock */,
 				A60EC21724CB54F1006748E8 /* Sources */,
 				A60EC21824CB54F1006748E8 /* Frameworks */,
 				A60EC21924CB54F1006748E8 /* Resources */,
+				C5AD5628DD920D6CB3AED9AB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B2530911F16203E9B2B55068 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Agenda-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5AD5628DD920D6CB3AED9AB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Agenda/Pods-Agenda-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Agenda/Pods-Agenda-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Agenda/Pods-Agenda-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A60EC21724CB54F1006748E8 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		A60EC23024CB54F2006748E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4808C089FFD7A341B9B6C05A /* Pods-Agenda.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +370,7 @@
 		};
 		A60EC23124CB54F2006748E8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB0C8A00C34624DBA429DA7F /* Pods-Agenda.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
